@@ -1,0 +1,39 @@
+body {
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+.container {
+  padding: 0 30px;
+
+  @include viewport-md () {
+      //! від 768 і більше
+      margin: 0 auto;
+      max-width: 708px;
+    }
+    @include viewport-lg (){
+      //! від 1024 і більше
+      max-width: 964px;
+    }
+    @include viewport-xl (){
+      //! від 1440 і більше
+      max-width: 1380px;
+    }
+    @include viewport-xll (){
+      //! від 1920 і більше 
+      max-width: 1660px;
+    }
+    
+}
+ 
+.wrapper {
+  
+  background: $gradient-supersoft;
+}
+.main-title {
+  @include title;
+}
+
+
+.dsda{
+  height: 100vh;
+}
